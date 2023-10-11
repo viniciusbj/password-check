@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html ng-app="psApp">
+<head>
+  <meta charset="utf-8">
+  <title>NETDEAL</title>
+  <meta name="description" content="Cadastra a hierarquia de colaboradores dentro de uma empresa e suas respectivas senhas.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="app.css">
+</head>
+<body ng-controller="EmployeeCtrl">
+
+  <section class="container">
+    <h1>Hierarquia NETDEAL</h1>
+
+    <form name="employeer-form">
+      <div>
+        <label>Nome</label>
+        <input type="text" id="name" name="name"/>
+      </div>
+      <div>
+        <label>Senha</label>
+        <input type="text" id="password" name="password"/>
+      </div>
+      <button ng-disabled="employeer-form.$invalid" type="submit">salvar</button>
+    </form>
+
+    <div class="card">
+      <p>Leandro</p>
+      <div>
+        <p>10%</p>
+        <p>Ruim</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="employeeForm/employeeController.js"></script>
+  <script src="employeeForm/employeeService.js"></script>
+
+</body>
+</html>

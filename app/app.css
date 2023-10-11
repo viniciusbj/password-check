@@ -1,0 +1,43 @@
+/* app css stylesheet */
+
+.container {
+  margin: auto;
+  max-width: 960px;
+}
+
+form {
+  margin: 10px auto;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  > p, input {
+    margin: 0px;
+  }
+}
+
+.card {
+  margin: 10px auto;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: 0 10px;
+
+  > p {
+    margin: 0px;
+  }
+
+  > div {
+    margin: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+
+    > p {
+      margin: auto 5px;  
+    }
+  }
+}
